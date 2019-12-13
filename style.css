@@ -20,3 +20,16 @@ body {
     color: #7e7e7e;
     background: #272727;
 }
+
+header {
+    background: url(images/header.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        min-height: 500px;
+    }
+}

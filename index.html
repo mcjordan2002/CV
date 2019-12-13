@@ -2,19 +2,20 @@
 <html>
 <head>
 	<title>Jordan Vitou</title>
-	<script src="jquery-2.1.4.js"></script>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="images/icon.png" type="image/x-icon">
 	 <!-- Compiled and minified CSS -->
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	 <!-- Compiled and minified JavaScript -->
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-			 
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  
 </head>
 <body>
 
+	<!--					Preloader					-->
 	<div class="preloader-background">
 			<div class="preloader-wrapper big active">
 				<div class="spinner-layer spinner-yellow-only">
@@ -29,12 +30,42 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="main">
-			<h1>BLA</h1>
-		</div>
+	</div>
+	
+	<!--					Header						-->
+	<header>
+		<nav class="nav-wrapper transparent">
+			<div class="container">
+				<a href="" class="brand-logo">Logo</a>
+				<a href="" class="sidenav-trigger" data-target="mobile-menu">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Experiences</a></li>
+						<li><a href="#">Abilities</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="sidenav grey lighten-2" id="mobile-menu">
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Experiences</a></li>
+						<li><a href="#">Abilities</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<!--					Javascript					-->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+			$(document).ready(function(){
+				$('.sidenav').sidenav();
+			});
+		</script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function(){
 				$('.preloader-background').delay(1700).fadeOut('slow');
@@ -44,5 +75,6 @@
 					.fadeOut();
 		});
 	</script>
+	
 </body>
 </html>
