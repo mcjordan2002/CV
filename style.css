@@ -11,9 +11,17 @@
     bottom: 0;  
 }
 
+.nav-wrapper {
+    position: fixed;
+    background-color: #272727;
+}
+
+li a:hover {
+    color: #ffd600; 
+}
+
 body {
-    font-family: poppins,sans-serif;
-    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: .025em;
     line-height: 2.1428;
@@ -32,4 +40,36 @@ header {
     header {
         min-height: 500px;
     }
+}
+
+#pagepanel1 {
+    text-align: justify;
+}
+
+#pagepanel1 h3, strong {
+    color: #ffd600;
+}
+
+#la strong {
+    font-weight: bold;
+} 
+
+#la , #ila{
+    margin-left: 50px;
+}
+
+.row {
+    margin: 50px;
+    padding-top: 50px;
+    border-top: 2px solid white;
+    max-width: 1000px;
+}
+
+#ici , #la , #ila{
+    max-width: 300px;
+}
+
+#pagepanel1 h5 {
+    color: white;
+    font-size: 1.3em;
 }
