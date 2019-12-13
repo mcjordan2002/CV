@@ -1,0 +1,22 @@
+.preloader-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272727;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+}
+
+body {
+    font-family: poppins,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .025em;
+    line-height: 2.1428;
+    color: #7e7e7e;
+    background: #272727;
+}
