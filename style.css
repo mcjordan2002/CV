@@ -12,7 +12,7 @@
 }
 
 .nav-wrapper {
-    position: fixed;
+   
     background-color: #272727;
 }
 
@@ -46,7 +46,7 @@ header {
     text-align: justify;
 }
 
-#pagepanel1 h3, strong {
+#pagepanel1 h3, strong, #pagepanel2 h3 {
     color: #ffd600;
 }
 
@@ -61,15 +61,17 @@ header {
 .row {
     margin: 50px;
     padding-top: 50px;
-    border-top: 2px solid white;
+    border-top: 1px solid white;
     max-width: 1000px;
 }
-
-#ici , #la , #ila{
+.tabs {
+    opacity: 0.8;
+}
+#ici , #la , #ila {
     max-width: 300px;
 }
 
-#pagepanel1 h5 {
+#pagepanel1 h5 , #pagepanel2 h5 {
     color: white;
     font-size: 1.3em;
 }
