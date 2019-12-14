@@ -12,6 +12,7 @@
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	 <!-- Compiled and minified JavaScript -->
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
 </head>
 <body>
@@ -37,28 +38,26 @@
 	<header>
 		<nav class="nav-wrapper">
 			<div class="container">
-				<a href="" class="brand-logo">Logo</a>
+				<a href="" class="brand-logo yellow-text text-accent-4" id="mob1">Jordan Vitou</a>
 				<a href="" class="sidenav-trigger" data-target="mobile-menu">
 					<i class="material-icons">menu</i>
 				</a>
 				<ul class="right hide-on-med-and-down">
-						<li><a href="#">Profile</a></li>
-						<li><a href="#">Experiences</a></li>
-						<li><a href="#">Abilities</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#pagepanel1">Profile</a></li>
+						<li><a href="#pagepanel2">Experiences</a></li>
+						<li><a href="#pagepanel3">Abilities</a></li>
+						<li><a href="#pagepanel4">Contact</a></li>
 				</ul>
 				<ul class="sidenav grey lighten-2" id="mobile-menu">
-						<li><a href="#">Profile</a></li>
-						<li><a href="#">Experiences</a></li>
-						<li><a href="#">Abilities</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#pagepanel1">Profile</a></li>
+						<li><a href="#pagepanel2">Experiences</a></li>
+						<li><a href="#pagepanel3">Abilities</a></li>
+						<li><a href="#pagepanel4">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
-	
+
 	<section class="container section" id="pagepanel1">
 		<h3 class="center-align">Profile</h3>
 		<h5 class="center-align">I'm a creative mobile developer</h5>
@@ -155,8 +154,8 @@
 		  
 		  </div>
 		  
-		  <section class="container section" id="pagepanel3">
-				<h3 class="center-align">Abilities</h3>
+		 <section class="container section" id="pagepanel3">
+				<h3 class="center-align yellow-text text-accent-4">Abilities</h3>
 				<h5 class="center-align">"If you're passionate about something, you can develop the abilities."<br>Chris Gardner</h5>
 				<div class="row">
 					<h6 class="white-text">SKILLS</h6>
@@ -253,9 +252,31 @@
 					</div>
 			</section>
 		  
-		  <div class="parallax-container center valign-wrapper">
-			<div class="parallax"><img src="https://images.unsplash.com/photo-1463780324318-d1a8ddc05a11?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=">
+		<div class="parallax-container center valign-wrapper">
+			<div class="parallax"><img src="images/parallax2.jpeg"></div>
+		</div>
+	
+	<footer class="page-footer" style="background-color: #272727;" id="pagepanel4">
+		<div class="contain">
+			<div class="row">
+				<div class="col s12 m6">
+					<h3 class="yellow-text text-accent-4">Conctact</h3>
+					<br>
+				</div>
+				<div class="col s12 m6">
+					<ul>
+						<li><i class="material-icons" style="margin-left: 5px;">mail</i> mcjordan2002@gmail.com</li>
+						<li><a href="https://www.linkedin.com/in/jordan-mc-875530180" class="btn-floating btn-small indigo darken-4"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://twitter.com/vitou_jordan" class="btn-floating btn-small blue darken-1" style="margin-top: 10px;"> <i class="fa fa-twitter"></i></a></li>
+					</ul>
+				</div>
 			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container center-align">&copy; 2019 Jordan Vitou, All rights reserved.</div>
+		</div>
+	</footer>
+
 	<!--					Javascript					-->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
