@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #272727;
+    background-color: #eeeeee;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -12,11 +12,11 @@
 }
 
 .nav-wrapper {
-    background-color: #272727;
+    background-color: #eeeeee;
 }
 
-li a:hover {
-    color: #ffd600; 
+nav ul li a:hover {
+    color: #ffd600!important; 
 }
 
 body {
@@ -24,12 +24,12 @@ body {
     font-weight: 400;
     letter-spacing: .025em;
     line-height: 2.1428;
-    color: #7e7e7e;
-    background: #272727;
+    color: black;
+    background: #eeeeee;
 }
 
 header {
-    background: url(images/header.jpeg);
+    background: url(images/header.jpg);
     background-size: cover;
     background-position: center;
     min-height: 1000px;
@@ -64,7 +64,7 @@ header {
 .row {
     margin: 50px;
     padding-top: 50px;
-    border-top: 1px solid white;
+    border-top: 1px solid black;
     max-width: 1000px;
 }
 .tabs {
@@ -75,6 +75,77 @@ header {
 }
 
 #pagepanel1 h5 , #pagepanel2 h5 {
-    color: white;
+    color: black;
     font-size: 1.3em;
 }
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+.loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #ffd600;
+    letter-spacing: 0.2em;
+  }
+  .loader::before, .loader::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #ffd600;
+    position: absolute;
+    -webkit-animation: load .7s infinite alternate ease-in-out;
+            animation: load .7s infinite alternate ease-in-out;
+  }
+  .loader::before {
+    top: 0;
+  }
+  .loader::after {
+    bottom: 0;
+  }
+  
+  @-webkit-keyframes load {
+    0% {
+      left: 0;
+      height: 30px;
+      width: 15px;
+    }
+    50% {
+      height: 8px;
+      width: 40px;
+    }
+    100% {
+      left: 235px;
+      height: 30px;
+      width: 15px;
+    }
+  }
+  
+  @keyframes load {
+    0% {
+      left: 0;
+      height: 30px;
+      width: 15px;
+    }
+    50% {
+      height: 8px;
+      width: 40px;
+    }
+    100% {
+      left: 235px;
+      height: 30px;
+      width: 15px;
+    }
+  }
