@@ -14,7 +14,6 @@
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- 
 </head>
 <body>
 	<!--					Preloader					-->
@@ -46,7 +45,8 @@
 						<li><a href="#pagepanel1">Profile</a></li>
 						<li><a href="#pagepanel2">Experiences</a></li>
 						<li><a href="#pagepanel3">Abilities</a></li>
-                        <li><a href="#pagepanel4">Contact</a></li>
+						<li><a href="#pagepanel4">Contact</a></li>
+						<li><a class="btn-flat white-text" href="dark-mode-fr.html">FR</a>|<a class="btn-flat white-text disabled" href="#">EN</a></li>
                         <li>
                             <a class="btn btn-small grey-text text-darken-3" style="background-color: #eeeeee;" href="index.html" title="Switch to white mode">
                                 <i class="material-icons left grey-text text-darken-3">brightness_high</i>White mode
@@ -54,23 +54,18 @@
                         </li>
 				</ul>
 			</div>
-        </nav>
+		</nav>
+		<div id="hero"  class="container center-align">
+			<h2 data-text="Hello world, I'm Jordan ..." style="color: transparent;">Hello world, I'm Jordan ...</h2>
+		</div>
 	</header>
 
 	<section class="container section" id="pagepanel1" data-aos="fade-up">
 		<h3 class="center-align">Profile</h3>
-		<h5 class="center-align">I'm a creative mobile developer</h5>
 		<div class="row">
 			<div class="col s12 m6 12" id="ici">
-				<h5>About me</h5>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Quae voluptate iure odit molestias tempore? Facere quas
-					nobis iste ex nostrum iure aliquid in rerum! Quibusdam 
-					tempore architecto pariatur in officia! Lorem ipsum dolor
-					 sit amet consectetur, adipisicing elit. Quisquam a quam 
-					 labore dignissimos facilis ab ipsam vel voluptatibus, 
-					 minus exercitationem eveniet optio natus sint. 
-					 Ut perferendis optio explicabo nemo dignissimos?
+				<h5 data-aos="fade-left">About me</h5>
+				<p data-aos="fade-left">I'm a creative web/mobile developer from Africa. I love to create apps for web and mobile devices. I like to keep it simple.
 				</p>
 			</div>
 			<div class="col s12 m6 center-align" id="ila" data-aos="fade-right">
@@ -97,10 +92,10 @@
 	</section>
 
 
-	<div class="parallax-container center valign-wrapper" style="min-height: 1000px;">
+	<div class="parallax-container center valign-wrapper" style="min-height: 1000px; background-color: #272727">
 			<section class="container" id="pagepanel2" data-aos="zoom-in">
 					<h3 class="center-align">Experiences</h3>
-					<h5 class="center-align">"The only source of knowledge is experience."<br>Albert Einstein</h5>
+					<h5 class="center-align white-text">"The only source of knowledge is experience."<br>Albert Einstein</h5>
 					<div class="row">
 						<div class="col s12">
 							<ul class="tabs tabs-fixed-width tab-demo z-depth-1 yellow accent-4">
@@ -124,33 +119,31 @@
 								</li>
 							</ul>
 							<div class="col s12" id="tab1">
-								<h1 class="flow-text black-text">STUDENT'S <strong>OFFICE</strong></h1>
+								<h1 class="flow-text white-text">STUDENT'S <strong>OFFICE</strong></h1>
 								<ul>
-									<li class="white-text"> - Member of student's</li>
+									<li class="white-text"> - Member of student's office</li>
 									<li class="white-text"> - AER (Assistant Epitech Regional) Pedagogic assistant for student's</li>
 								</ul>
-								<h1 class="flow-text black-text">EPITECH <strong>PROJECTS</strong></h1>
+								<h1 class="flow-text white-text">EPITECH <strong>PROJECTS</strong></h1>
 								<ul>
 									<li class="white-text"> - 42SH -> SHell in C</li>
 									<li class="white-text"> - My RPG -> Role Play Game in C and CSFML</li>
 									<li class="white-text"> - My Web -> An web application with Jinja & Flask</li>
 									<li class="white-text"> - Navy -> Battleship in C and Ncurses library</li>
 								</ul>
+								<h1 class="flow-text"><strong>INTERNSHIP</strong></h1>
+								<h6 class="white-text">Internship of two month in <a class="yellow-text " href="https://right-com.com/">RightCom</a></h6>
 							</div>
 							<div class="col s12" id="2">
-									<p class="flow-text">damokn</p>
-									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-										Totam odit vitae facilis quidem recusandae ab reprehenderit, 
-										praesentium porro nihil doloribus perspiciatis aliquid sint 
-										corrupti possimus qui eos delectus eligendi beatae!</p>
-								</div>
+								<h1 class="flow-text black-text">EPITECH <strong>PROJECTS</strong></h1>
+								<ul>
+									<li class="black-text"> - Zappy -> Network game</li>
+									<li class="black-text"> - Indie Studio -> A cross-platform 3D</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</section>
-			<div class="parallax">
-			  <img src="images/parallax.jpg">
-			</div>
-		  
 		  </div>
 		  
 		 <section class="container section" id="pagepanel3" data-aos="zoom-in">
@@ -158,7 +151,7 @@
 				<h5 class="center-align">"If you're passionate about something, you can develop the abilities."<br>Chris Gardner</h5>
 				<div class="row">
 					<h6 class="white-text">SKILLS</h6>
-					<div class="col s12 m6 12">
+					<div class="col s12 m6 12" data-aos="fade-down-right">
 							<p>C Programming</p>
 							<div class="progress white">
 									<div class="determinate yellow accent-4" style="width: 70%"></div>
@@ -176,7 +169,7 @@
 									<div class="determinate yellow accent-4" style="width: 60%"></div>
 							</div>
 					</div>
-					<div class="col s12 m6 12">
+					<div class="col s12 m6 12" data-aos="fade-down-left">
 							<p>JavaScript</p>
 							<div class="progress white">
 									<div class="determinate yellow accent-4" style="width: 70%"></div>
@@ -185,17 +178,17 @@
 							<div class="progress white">
 									<div class="determinate yellow accent-4" style="width: 50%"></div>
 							</div>
-							<p>Json</p>
+							<p>Assembly</p>
 							<div class="progress white">
 									<div class="determinate yellow accent-4" style="width: 50%"></div>
 							</div>
 							<p>Flutter</p>
 							<div class="progress white">
-									<div class="determinate yellow accent-4" style="width: 95%"></div>
+									<div class="determinate yellow accent-4" style="width: 75%"></div>
 							</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row"  data-aos="fade-down-left">
 					<h6 class="white-text">LANGUAGES</h6>
 						<p>French (Daily use)</p>
 						<div class="progress white">
@@ -210,12 +203,12 @@
 								<div class="determinate yellow accent-4" style="width: 65%"></div>
 						</div>
 				</div>
-				<div class="row">
+				<div class="row"  data-aos="fade-down-left">
 						<h6 class="white-text">TOOLS</h6>
 						<div class="col s12 m6 12">
 								<p>Windows</p>
 								<div class="progress white">
-										<div class="determinate yellow accent-4" style="width: 70%"></div>
+										<div class="determinate yellow accent-4" style="width: 70%; transition: width 20s ease 0s; width: 90%;"></div>
 								</div>
 								<p>Linux</p>
 								<div class="progress white">
@@ -252,7 +245,7 @@
 			</section>
 		  
 		<div class="parallax-container center valign-wrapper">
-			<div class="parallax"><img src="images/parallax2.jpeg"></div>
+			<div class="parallax"><img src="images/parallax.jpg"></div>
 		</div>
 	
 	<footer class="page-footer" style="background-color: #272727;" id="pagepanel4">
@@ -264,15 +257,15 @@
 				</div>
 				<div class="col s12 m6">
 					<ul>
-						<li><i class="material-icons" style="margin-left: 5px;">mail</i> mcjordan2002@gmail.com</li>
-						<li><a href="https://www.linkedin.com/in/jordan-mc-875530180" class="btn-floating btn-small indigo darken-4"><i class="fa fa-linkedin"></i></a></li>
+						<li class="black-text"><a href="mailto: mcjordan2002@gmail.com"><i class="material-icons black-text" style="margin-left: 5px;">mail</i><span style="color: transparent;"></a></li>
+						<li class="black-text"><a href="https://www.linkedin.com/in/jordan-mc-875530180" class="btn-floating btn-small indigo darken-4"><i class="fa fa-linkedin"></i></a><span style="color: transparent;"></li>
 						<li><a href="https://twitter.com/vitou_jordan" class="btn-floating btn-small blue darken-1" style="margin-top: 10px;"> <i class="fa fa-twitter"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright">
-			<div class="container center-align">&copy; 2019 Jordan Vitou, All rights reserved.</div>
+			<div class="container center-align white-text">&copy; 2020 Jordan Vitou, All rights reserved.</div>
 		</div>
 	</footer>
 
@@ -288,10 +281,10 @@
 		</script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function(){
-				$('.preloader-background').delay(1700).fadeOut('slow');
+				$('.preloader-background').delay(2000).fadeOut('slow');
 				
 				$('.preloader-wrapper')
-					.delay(2000)
+					.delay(1700)
 					.fadeOut();
 		});
 	</script>
@@ -320,5 +313,6 @@
 
 			});
 	 </script>
+
 </body>
 </html>

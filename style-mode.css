@@ -1,3 +1,39 @@
+#hero 
+{
+    margin-top: 400px;
+}
+
+#hero h2 
+{
+  font-size: 3em;
+  letter-spacing: 15px;
+  color: #ffd600;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,  #ffd600);
+  line-height: 1.0em;
+  outline: none;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate
+{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+  {
+    color: #ffd500;
+    box-shadow: none;
+  }
+  18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+  {
+    color: white;
+    text-shadow: 0 0 10px yellow,
+    0 0 20px yellow,
+    0 0 40px yellow,
+    0 0 80px yellow,
+    0 0 160px yellow;
+  }
+}
+
 .preloader-background {
     display: flex;
     align-items: center;
@@ -42,6 +78,9 @@ header {
 
     #mob1 {
         display: none;
+    }
+    #hero {
+      display: none;
     }
 }
 

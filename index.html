@@ -13,13 +13,22 @@
 	 <!-- Compiled and minified JavaScript -->
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
- 
+	 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+	 <style>
+		/* when link is active the color*/
+		.tab a.active {
+		background-color: #fff176!important;
+		}
+		/* color of the underlined (indicator)*/
+		.tabs .indicator{
+		background-color: black!important;
+		}
+	</style>
 </head>
 <body>
 	</a>
 
-	<!--					Preloader					-->
+	<!--					Preloader				-->				
 	<div class="preloader-background">
 		<div class="loader">Loading...</div>
 	</div>
@@ -30,14 +39,14 @@
 			<div class="container">
 				<a href="" class="brand-logo yellow-text text-accent-4" id="mob1">Jordan Vitou</a>
 				<a href="" class="sidenav-trigger" data-target="mobile-menu">
-					<i class="material-icons">menu</i>
+					<i class="material-icons" style="color: #ffd600;">menu</i>
 				</a>
 				<ul class="right hide-on-med-and-down">
 						<li><a class="black-text" href="#pagepanel1">Profile</a></li>
 						<li><a class="black-text" href="#pagepanel2">Experiences</a></li>
 						<li><a class="black-text" href="#pagepanel3">Abilities</a></li>
 						<li><a class="black-text" href="#pagepanel4">Contact</a></li>
-						<li><a class="btn-flat white-text" href="index-fr.html">FR</a>|<a class="btn-flat white-text disabled" href="#">EN</a></li>
+						<li class="grey"><a class="btn-flat white-text" href="index-fr.html">FR</a>|<a class="btn-flat white-text disabled" href="#">EN</a></li>
 						<li>
                             <a class="btn-floating btn-small" style="background-color: #272727;" href="dark-mode.html" title="Switch to dark mode">
                                 <i class="material-icons left grey-text text-lighten-2">brightness_4</i>
@@ -49,6 +58,7 @@
 						<li><a href="#pagepanel2">Experiences</a></li>
 						<li><a href="#pagepanel3">Abilities</a></li>
 						<li><a href="#pagepanel4">Contact</a></li>
+						<li class="grey"><a class="btn-flat white-text" href="index-fr.html">FR</a>|<a class="btn-flat white-text disabled" href="#">EN</a></li>
 						<li>
                             <a class="btn btn-small grey-text text-lighten-2" style="background-color: #272727;" href="dark-mode.html" title="Switch to dark mode">
                                 <i class="material-icons left grey-text text-lighten-2">brightness_4</i>Dark Mode
@@ -56,23 +66,18 @@
                         </li>
 				</ul>
 			</div>
-		</nav>
+		</nav> 
+		<div id="hero"  class="container center-align">
+			<h2 data-text="Hello world, I'm Jordan ..." style="color: transparent;">Hello world, I'm Jordan ...</h2>
+		</div>
 	</header>
 
 	<section class="container section" id="pagepanel1" data-aos="fade-up">
 		<h3 class="center-align">Profile</h3>
-		<h5 class="center-align">I'm a creative mobile developer.</h5>
 		<div class="row">
 			<div class="col s12 m6 12" id="ici">
 				<h5 data-aos="fade-left">About me</h5>
-				<p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Quae voluptate iure odit molestias tempore? Facere quas
-					nobis iste ex nostrum iure aliquid in rerum! Quibusdam 
-					tempore architecto pariatur in officia! Lorem ipsum dolor
-					 sit amet consectetur, adipisicing elit. Quisquam a quam 
-					 labore dignissimos facilis ab ipsam vel voluptatibus, 
-					 minus exercitationem eveniet optio natus sint. 
-					 Ut perferendis optio explicabo nemo dignissimos?
+				<p data-aos="fade-left">I'm a creative web/mobile developer from Africa. I love to create apps for web and mobile devices. I like to keep it simple.
 				</p>
 			</div>
 			<div class="col s12 m6 center-align" id="ila" data-aos="fade-right">
@@ -99,10 +104,10 @@
 	</section>
 
 
-	<div class="parallax-container center valign-wrapper" style="min-height: 1000px;">
+	<div class="parallax-container center valign-wrapper white" style="min-height: 1000px;">
 			<section class="container" id="pagepanel2" data-aos="zoom-in">
 					<h3 class="center-align">Experiences</h3>
-					<h5 class="center-align">"The only source of knowledge is experience."<br>Albert Einstein</h5>
+					<h5 class="center-align black-text">"The only source of knowledge is experience."<br>Albert Einstein</h5>
 					<div class="row">
 						<div class="col s12">
 							<ul class="tabs tabs-fixed-width tab-demo z-depth-1 yellow accent-4">
@@ -128,31 +133,29 @@
 							<div class="col s12" id="tab1">
 								<h1 class="flow-text black-text">STUDENT'S <strong>OFFICE</strong></h1>
 								<ul>
-									<li class="white-text"> - Member of student's</li>
-									<li class="white-text"> - AER (Assistant Epitech Regional) Pedagogic assistant for student's</li>
+									<li class="black-text"> - Member of student's office</li>
+									<li class="black-text"> - AER (Assistant Epitech Regional) Pedagogic assistant for student's</li>
 								</ul>
 								<h1 class="flow-text black-text">EPITECH <strong>PROJECTS</strong></h1>
 								<ul>
-									<li class="white-text"> - 42SH -> SHell in C</li>
-									<li class="white-text"> - My RPG -> Role Play Game in C and CSFML</li>
-									<li class="white-text"> - My Web -> An web application with Jinja & Flask</li>
-									<li class="white-text"> - Navy -> Battleship in C and Ncurses library</li>
+									<li class="black-text"> - 42SH -> SHell in C</li>
+									<li class="black-text"> - My RPG -> Role Play Game in C and CSFML</li>
+									<li class="black-text"> - My Web -> An web application with Jinja & Flask</li>
+									<li class="black-text"> - Navy -> Battleship in C and Ncurses library</li>
 								</ul>
+								<h1 class="flow-text black-text"><strong>INTERNSHIP</strong></h1>
+								<h6>Internship of two month in <a class="yellow-text " href="https://right-com.com/">RightCom</a></h6>
 							</div>
 							<div class="col s12" id="2">
-									<p class="flow-text">damokn</p>
-									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-										Totam odit vitae facilis quidem recusandae ab reprehenderit, 
-										praesentium porro nihil doloribus perspiciatis aliquid sint 
-										corrupti possimus qui eos delectus eligendi beatae!</p>
-								</div>
+								<h1 class="flow-text black-text">EPITECH <strong>PROJECTS</strong></h1>
+								<ul>
+									<li class="black-text"> - Zappy -> Network game</li>
+									<li class="black-text"> - Indie Studio -> A cross-platform 3D</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</section>
-			<div class="parallax">
-			  <img src="images/parallax.jpg">
-			</div>
-		  
 		  </div>
 		  
 		 <section class="container section" id="pagepanel3" data-aos="zoom-in">
@@ -162,91 +165,91 @@
 					<h6 class="black-text">SKILLS</h6>
 					<div class="col s12 m6 12" data-aos="fade-down-right">
 							<p>C Programming</p>
-							<div class="progress white">
+							<div class="progress grey lighten-3">
 									<div class="determinate yellow accent-4" style="width: 70%"></div>
 							</div>
 							<p>C++ Programming</p>
-							<div class="progress white">
+							<div class="progress grey lighten-3">
 									<div class="determinate yellow accent-4" style="width: 50%"></div>
 							</div>
 							<p>HTML(5) / CSS(3)</p>
-							<div class="progress white">
+							<div class="progress grey lighten-3">
 									<div class="determinate yellow accent-4" style="width: 80%"></div>
 							</div>
 							<p>PHP / MySQL</p>
-							<div class="progress white">
+							<div class="progress grey lighten-3">
 									<div class="determinate yellow accent-4" style="width: 60%"></div>
 							</div>
 					</div>
 					<div class="col s12 m6 12" data-aos="fade-down-left">
 							<p>JavaScript</p>
-							<div class="progress white">
+							<div class="progress grey lighten-3">
 									<div class="determinate yellow accent-4" style="width: 70%"></div>
 							</div>
 							<p>JQuery</p>
-							<div class="progress white">
+							<div class="progress grey lighten-3">
 									<div class="determinate yellow accent-4" style="width: 50%"></div>
 							</div>
-							<p>Json</p>
-							<div class="progress white">
+							<p>Assembly</p>
+							<div class="progress grey lighten-3">
 									<div class="determinate yellow accent-4" style="width: 50%"></div>
 							</div>
 							<p>Flutter</p>
-							<div class="progress white">
-									<div class="determinate yellow accent-4" style="width: 95%"></div>
+							<div class="progress grey lighten-3">
+									<div class="determinate yellow accent-4" style="width: 75%"></div>
 							</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row"  data-aos="fade-down-left">
 					<h6 class="black-text">LANGUAGES</h6>
 						<p>French (Daily use)</p>
-						<div class="progress white">
+						<div class="progress grey lighten-3">
 								<div class="determinate yellow accent-4" style="width: 95%"></div>
 						</div>
 						<p>English (A little)</p>
-						<div class="progress white">
+						<div class="progress grey lighten-3">
 								<div class="determinate yellow accent-4" style="width: 60%"></div>
 						</div>
 						<p>Fon (Mother tongue)</p>
-						<div class="progress white">
+						<div class="progress grey lighten-3">
 								<div class="determinate yellow accent-4" style="width: 65%"></div>
 						</div>
 				</div>
-				<div class="row">
+				<div class="row"  data-aos="fade-down-left">
 						<h6 class="black-text">TOOLS</h6>
 						<div class="col s12 m6 12">
 								<p>Windows</p>
-								<div class="progress white">
+								<div class="progress grey lighten-3">
 										<div class="determinate yellow accent-4" style="width: 70%; transition: width 20s ease 0s; width: 90%;"></div>
 								</div>
 								<p>Linux</p>
-								<div class="progress white">
+								<div class="progress grey lighten-3">
 										<div class="determinate yellow accent-4" style="width: 70%"></div>
 								</div>
 								<p>Git / Gitkraken</p>
-								<div class="progress white">
+								<div class="progress grey lighten-3">
 										<div class="determinate yellow accent-4" style="width: 80%"></div>
 								</div>
 								<p>GIMP</p>
-								<div class="progress white">
+								<div class="progress grey lighten-3">
 										<div class="determinate yellow accent-4" style="width: 60%"></div>
 								</div>
 						</div>
 						<div class="col s12 m6 12">
 								<p>XAMP / Symphony</p>
-								<div class="progress white">
+								<div class="progress grey lighten-3">
 										<div class="determinate yellow accent-4" style="width: 60%"></div>
 								</div>
 								<p>Emacs</p>
-								<div class="progress white">
+								<div class="progress grey lighten-3">
 										<div class="determinate yellow accent-4" style="width: 70%"></div>
 								</div>
 								<p>Visual Studio Code</p>
-								<div class="progress white">
+								<div class="progress grey lighten-3">
 										<div class="determinate yellow accent-4" style="width: 70%"></div>
 								</div>
 								<p>Android Studio</p>
-								<div class="progress white">
+								<div class="progress grey lighten-3">
 										<div class="determinate yellow accent-4" style="width: 60%"></div>
 								</div>
 						</div>
@@ -254,7 +257,7 @@
 			</section>
 		  
 		<div class="parallax-container center valign-wrapper">
-			<div class="parallax"><img src="images/parallax2.jpeg"></div>
+			<div class="parallax"><img src="images/parallax.jpg"></div>
 		</div>
 	
 	<footer class="page-footer" style="background-color: #eeeeee;" id="pagepanel4">
@@ -266,8 +269,8 @@
 				</div>
 				<div class="col s12 m6">
 					<ul>
-						<li class="black-text"><i class="material-icons black-text" style="margin-left: 5px;">mail</i> mcjordan2002@gmail.com</li>
-						<li><a href="https://www.linkedin.com/in/jordan-mc-875530180" class="btn-floating btn-small indigo darken-4"><i class="fa fa-linkedin"></i></a></li>
+						<li class="black-text"><a href="mailto: mcjordan2002@gmail.com"><i class="material-icons black-text" style="margin-left: 5px;">mail</i><span style="color: transparent;"></a></li>
+						<li class="black-text"><a href="https://www.linkedin.com/in/jordan-mc-875530180" class="btn-floating btn-small indigo darken-4"><i class="fa fa-linkedin"></i></a><span style="color: transparent;"></li>
 						<li><a href="https://twitter.com/vitou_jordan" class="btn-floating btn-small blue darken-1" style="margin-top: 10px;"> <i class="fa fa-twitter"></i></a></li>
 					</ul>
 				</div>
