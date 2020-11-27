@@ -79,6 +79,9 @@ header {
     #mob1 {
         display: none;
     }
+    #hero {
+      display: none;
+    }
 }
 
 #pagepanel1 {
